@@ -1,13 +1,13 @@
 #zlomky.py
 #autor- Klara Novakova
 from math import gcd
-class Zlomek(object):
+class Zlomek:
     def __init__(self, citatel, jmenovatel):
         if jmenovatel==0:
             raise ValueError("jmenovatel nesmi byt nula")
         delitel = gcd(citatel,jmenovatel)
-        self.citatel=citatel/delitel
-        self.jmenovatel=jmenovatel/delitel
+        self.citatel=citatel//delitel
+        self.jmenovatel=jmenovatel//delitel
     def __add__(self, other):
         novy_citatel=self.citatel*other.jmenovatel+other.citatel*self.jmenovatel
         novy_jmenovatel=self.jmenovatel*other.jmenovatel
@@ -37,7 +37,15 @@ class Zlomek(object):
     
 
 
-    zlomek1=Zlomek(5,8)
-    zlomek2=Zlomek(12,7)
-    zlomek3=zlomek2+zlomek1
-    print(zlomek3)
+zlomek1=Zlomek(1,2)
+zlomek2=Zlomek(2,3)
+zlomek3=zlomek2+zlomek1
+zlomek4=zlomek2-zlomek1
+zlomek5=zlomek2*zlomek1
+zlomek6=zlomek2/zlomek1
+zlomek7=abs(zlomek4)
+print(zlomek3)
+print(zlomek4)
+print(zlomek5)
+print(zlomek6)
+print(zlomek7)
