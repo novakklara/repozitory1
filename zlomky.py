@@ -34,18 +34,17 @@ class Zlomek:
         if self.jmenovatel==1:
             return(f"{self.citatel}")
         return (f"{self.citatel}/{self.jmenovatel}")
-    
 
-
-zlomek1=Zlomek(1,2)
-zlomek2=Zlomek(2,3)
-zlomek3=zlomek2+zlomek1
-zlomek4=zlomek2-zlomek1
-zlomek5=zlomek2*zlomek1
-zlomek6=zlomek2/zlomek1
-zlomek7=abs(zlomek4)
-print(zlomek3)
-print(zlomek4)
-print(zlomek5)
-print(zlomek6)
-print(zlomek7)
+if __name__ == "__main__":
+    zlomek1=Zlomek(1,2)
+    zlomek2=Zlomek(2,3)
+    zlomek3=zlomek2+zlomek1
+    zlomek4=zlomek2-zlomek1
+    zlomek5=zlomek2*zlomek1
+    zlomek6=zlomek2/zlomek1
+    zlomek7=abs(zlomek4)
+    print(zlomek3)
+    print(zlomek4)
+    print(zlomek5)
+    print(zlomek6)
+    print(zlomek7)
